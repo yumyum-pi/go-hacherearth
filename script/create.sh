@@ -43,5 +43,5 @@ if [ ! -d "$FILEDIR" ]; then
 fi
 
 # replace the add the url in the file
-FILEDATA="//url: $URL\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tfmt.Println(\"Happy Solving\")\n\n\tvar n int\t\t\t// first input\n\tfmt.Scanf(\"%d\", &n) // get the input value\n\tfmt.Println(n)\n}"
+FILEDATA="// URL: $URL\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tfmt.Println(\"Happy Solving\")\n\n\tvar n int\t\t\t// first input\n\tfmt.Scanf(\"%d\", &n) // get the input value\n\tfmt.Println(n)\n}"
 echo -e $FILEDATA > $FILEDIR #write the data to the file
